@@ -4,10 +4,11 @@ conda_build:
   pkg_format: '2'
 conda_forge_output_validation: true
 github:
+  user_or_org: realthunder
   branch_name: main
   tooling_branch_name: main
 provider:
-  linux_aarch64: azure
-  linux_ppc64le: azure
-  win: azure
+  linux_aarch64: github_actions
+  linux_ppc64le: github_actions
+  win: github_actions
 test_on_native_only: true
