@@ -1,11 +1,11 @@
-About smesh
-===========
+About smesh-rt-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/realthunder/smesh-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/LaughlinResearch/SMESH
 
 Package license: LGPL-2.1-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/smesh-feedstock/blob/main/LICENSE.txt)
 
 Summary: A complete MESH framework based on the OCCT library.
 
@@ -16,66 +16,6 @@ Current build status
 
 
 <table>
-    
-  <tr>
-    <td>Azure</td>
-    <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5832&branchName=main">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/smesh-feedstock?branchName=main">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5832&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/smesh-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5832&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/smesh-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5832&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/smesh-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5832&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/smesh-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5832&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/smesh-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5832&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/smesh-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
-    </td>
-  </tr>
 </table>
 
 Current release info
@@ -83,53 +23,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-smesh-green.svg)](https://anaconda.org/conda-forge/smesh) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/smesh.svg)](https://anaconda.org/conda-forge/smesh) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/smesh.svg)](https://anaconda.org/conda-forge/smesh) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/smesh.svg)](https://anaconda.org/conda-forge/smesh) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-smesh--rt-green.svg)](https://anaconda.org/conda-forge/smesh-rt) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/smesh-rt.svg)](https://anaconda.org/conda-forge/smesh-rt) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/smesh-rt.svg)](https://anaconda.org/conda-forge/smesh-rt) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/smesh-rt.svg)](https://anaconda.org/conda-forge/smesh-rt) |
 
-Installing smesh
-================
+Installing smesh-rt
+===================
 
-Installing `smesh` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `smesh-rt` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `smesh` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `smesh-rt` can be installed with `conda`:
 
 ```
-conda install smesh
-```
-
-or with `mamba`:
-
-```
-mamba install smesh
-```
-
-It is possible to list all of the versions of `smesh` available on your platform with `conda`:
-
-```
-conda search smesh --channel conda-forge
+conda install smesh-rt
 ```
 
 or with `mamba`:
 
 ```
-mamba search smesh --channel conda-forge
+mamba install smesh-rt
+```
+
+It is possible to list all of the versions of `smesh-rt` available on your platform with `conda`:
+
+```
+conda search smesh-rt --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search smesh-rt --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search smesh --channel conda-forge
+mamba repoquery search smesh-rt --channel conda-forge
 
-# List packages depending on `smesh`:
-mamba repoquery whoneeds smesh --channel conda-forge
+# List packages depending on `smesh-rt`:
+mamba repoquery whoneeds smesh-rt --channel conda-forge
 
-# List dependencies of `smesh`:
-mamba repoquery depends smesh --channel conda-forge
+# List dependencies of `smesh-rt`:
+mamba repoquery depends smesh-rt --channel conda-forge
 ```
 
 
@@ -174,17 +114,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating smesh-feedstock
-========================
+Updating smesh-rt-feedstock
+===========================
 
-If you would like to improve the smesh recipe or build a new
+If you would like to improve the smesh-rt recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/smesh-feedstock are
+Note that all branches in the realthunder/smesh-rt-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.

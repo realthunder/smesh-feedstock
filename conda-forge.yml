@@ -8,7 +8,9 @@ github:
   branch_name: main
   tooling_branch_name: main
 provider:
+  linux_64: github_actions
   linux_aarch64: github_actions
-  linux_ppc64le: github_actions
-  win: github_actions
+  win_64: github_actions
+  osx_64: github_actions
+  osx_arm64: github_actions
 test_on_native_only: true

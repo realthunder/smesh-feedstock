@@ -5,7 +5,7 @@ c_compiler:
 channel_sources:
 - conda-forge
 channel_targets:
-- conda-forge main
+- realthunder main
 cxx_compiler:
 - vs2019
 occt:
