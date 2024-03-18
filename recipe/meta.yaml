@@ -1,4 +1,4 @@
-{% set name = "smesh-rt" %}
+{% set name = "smesh" %}
 {% set version = "9.9.0.0" %}
 {% set sha256 = "bd5bddd509e5120bdd56178c37471984062e8abd36465389d64fb6e1b811a1d4" %}
 
@@ -15,7 +15,7 @@ package:
     #     - linker.patch  # [win]
 
 build:
-  number: 5
+  number: 6
 
 requirements:
   build:
@@ -31,15 +31,13 @@ requirements:
     - python =3.9
   host:
     - vtk
-    - boost-cpp
+    - libboost-devel
     - occt
     - zlib
     - pthreads-win32  # [win]
     # - libmed
   run:
     - vtk
-    - boost-cpp
-    - occt
     - {{ pin_compatible('occt', max_pin='x.x.x') }}
     - zlib
     - pthreads-win32  # [win]
@@ -63,6 +61,7 @@ test:
     - cmake
     - ninja
     - catch2 < 3.0
+    - libboost-devel
 
 about:
   home: https://github.com/LaughlinResearch/SMESH
@@ -74,4 +73,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - looooo
+    - realthunder

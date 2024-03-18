@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 MACOSX_SDK_VERSION:
 - '10.12'
 boost_cpp:
-- 1.78.0
+- 1.86.0
 c_compiler:
 - clang
 c_compiler_version:
@@ -21,14 +21,12 @@ macos_machine:
 occt:
 - '7.7'
 pin_run_as_build:
-  boost-cpp:
-    max_pin: x.x.x
   occt:
     max_pin: x.x
 target_platform:
 - osx-64
 vtk:
-- 9.2.5
+- 9.2.6
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
