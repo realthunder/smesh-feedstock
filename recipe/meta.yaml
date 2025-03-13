@@ -15,7 +15,7 @@ package:
     #     - linker.patch  # [win]
 
 build:
-  number: 6
+  number: 7
 
 requirements:
   build:
@@ -31,6 +31,7 @@ requirements:
     - python
   host:
     - vtk 9.2.6
+    - ffmpeg 7.0.1
     - libboost-devel
     - occt 7.7.2
     - zlib
