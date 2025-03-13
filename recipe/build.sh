@@ -1,20 +1,18 @@
-git clone https://github.com/realthunder/SMESH.git
-cd SMESH
-git checkout patch-4
-git submodule update --init --recursive
-python prepare.py
-
-mkdir build
-cd build
+# git clone https://github.com/realthunder/SMESH.git
+# cd SMESH
+# git checkout patch-4
+# git submodule update --init --recursive
+# python prepare.py
+#
+# mkdir build
+# cd build
 
 cmake -G "Ninja" \
+      -B build -S . \
       -D CMAKE_BUILD_TYPE:STRING="Release" \
       -D CMAKE_INSTALL_PREFIX:FILEPATH=$PREFIX \
       -D CMAKE_PREFIX_PATH:FILEPATH=$PREFIX \
       -D Boost_NO_BOOST_CMAKE:BOOL=ON \
-      -D ENABLE_MED:BOOL=OFF \
-      -D ENABLE_NETGEN:BOOL=ON \
-      -D CMAKE_CXX_STANDARD=14 \
-      ..
+      -D ENABLE_NETGEN:BOOL=ON
 
-ninja install
+ninja -C build install
