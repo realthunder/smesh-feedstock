@@ -1,5 +1,5 @@
-About smesh-rt-feedstock
-========================
+About smesh-feedstock
+=====================
 
 Feedstock license: [BSD-3-Clause](https://github.com/realthunder/smesh-feedstock/blob/main/LICENSE.txt)
 
@@ -23,108 +23,69 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-smesh--rt-green.svg)](https://anaconda.org/conda-forge/smesh-rt) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/smesh-rt.svg)](https://anaconda.org/conda-forge/smesh-rt) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/smesh-rt.svg)](https://anaconda.org/conda-forge/smesh-rt) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/smesh-rt.svg)](https://anaconda.org/conda-forge/smesh-rt) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-smesh-green.svg)](https://anaconda.org/realthunder/smesh) | [![Conda Downloads](https://img.shields.io/conda/dn/realthunder/smesh.svg)](https://anaconda.org/realthunder/smesh) | [![Conda Version](https://img.shields.io/conda/vn/realthunder/smesh.svg)](https://anaconda.org/realthunder/smesh) | [![Conda Platforms](https://img.shields.io/conda/pn/realthunder/smesh.svg)](https://anaconda.org/realthunder/smesh) |
 
-Installing smesh-rt
-===================
+Installing smesh
+================
 
-Installing `smesh-rt` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `smesh` from the `realthunder` channel can be achieved by adding `realthunder` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels realthunder
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `smesh-rt` can be installed with `conda`:
+Once the `realthunder` channel has been enabled, `smesh` can be installed with `conda`:
 
 ```
-conda install smesh-rt
-```
-
-or with `mamba`:
-
-```
-mamba install smesh-rt
-```
-
-It is possible to list all of the versions of `smesh-rt` available on your platform with `conda`:
-
-```
-conda search smesh-rt --channel conda-forge
+conda install smesh
 ```
 
 or with `mamba`:
 
 ```
-mamba search smesh-rt --channel conda-forge
+mamba install smesh
+```
+
+It is possible to list all of the versions of `smesh` available on your platform with `conda`:
+
+```
+conda search smesh --channel realthunder
+```
+
+or with `mamba`:
+
+```
+mamba search smesh --channel realthunder
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search smesh-rt --channel conda-forge
+mamba repoquery search smesh --channel realthunder
 
-# List packages depending on `smesh-rt`:
-mamba repoquery whoneeds smesh-rt --channel conda-forge
+# List packages depending on `smesh`:
+mamba repoquery whoneeds smesh --channel realthunder
 
-# List dependencies of `smesh-rt`:
-mamba repoquery depends smesh-rt --channel conda-forge
+# List dependencies of `smesh`:
+mamba repoquery depends smesh --channel realthunder
 ```
 
 
-About conda-forge
-=================
-
-[![Powered by
-NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
-
-conda-forge is a community-led conda channel of installable packages.
-In order to provide high-quality builds, the process has been automated into the
-conda-forge GitHub organization. The conda-forge organization contains one repository
-for each of the installable packages. Such a repository is known as a *feedstock*.
-
-A feedstock is made up of a conda recipe (the instructions on what and how to build
-the package) and the necessary configurations for automatic building using freely
-available continuous integration services. Thanks to the awesome service provided by
-[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
-[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
-it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
-channel for Linux, Windows and OSX respectively.
-
-To manage the continuous integration and simplify feedstock maintenance
-[conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
-Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
-this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
-
-For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
-
-Terminology
-===========
-
-**feedstock** - the conda recipe (raw material), supporting scripts and CI configuration.
-
-**conda-smithy** - the tool which helps orchestrate the feedstock.
-                   Its primary use is in the construction of the CI ``.yml`` files
-                   and simplify the management of *many* feedstocks.
-
-**conda-forge** - the place where the feedstock and smithy live and work to
-                  produce the finished article (built conda distributions)
 
 
-Updating smesh-rt-feedstock
-===========================
+Updating smesh-feedstock
+========================
 
-If you would like to improve the smesh-rt recipe or build a new
+If you would like to improve the smesh recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
-`conda-forge` channel, whereupon the built conda packages will be available for
-everybody to install and use from the `conda-forge` channel.
-Note that all branches in the realthunder/smesh-rt-feedstock are
+`realthunder` channel, whereupon the built conda packages will be available for
+everybody to install and use from the `realthunder` channel.
+Note that all branches in the realthunder/smesh-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
@@ -139,5 +100,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@looooo](https://github.com/looooo/)
+* [@realthunder](https://github.com/realthunder/)
 

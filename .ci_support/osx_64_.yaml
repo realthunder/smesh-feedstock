@@ -1,34 +1,29 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '10.12'
+- '10.13'
 MACOSX_SDK_VERSION:
-- '10.12'
-boost_cpp:
-- 1.86.0
+- '10.13'
 c_compiler:
 - clang
 c_compiler_version:
-- '15'
+- '18'
 channel_sources:
-- conda-forge
+- realthunder,conda-forge,defaults
 channel_targets:
 - realthunder main
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '15'
+- '18'
+libboost_devel:
+- '1.84'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 occt:
-- '7.7'
-pin_run_as_build:
-  occt:
-    max_pin: x.x
+- 7.8.1
 target_platform:
 - osx-64
-vtk:
-- 9.2.6
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
 zlib:
-- '1.2'
+- '1'

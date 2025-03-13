@@ -2,7 +2,9 @@ build_platform:
   osx_arm64: osx_64
 conda_build:
   pkg_format: '2'
-conda_forge_output_validation: true
+conda_forge_output_validation: false
+os_version:
+  linux_64: cos7
 github:
   user_or_org: realthunder
   branch_name: main
@@ -13,4 +15,4 @@ provider:
   win_64: github_actions
   osx_64: github_actions
   osx_arm64: github_actions
-test_on_native_only: true
+test: native_and_emulated

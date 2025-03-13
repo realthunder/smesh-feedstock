@@ -28,16 +28,16 @@ requirements:
     - cmake
     - git
     - python-patch
-    - python =3.9
+    - python
   host:
-    - vtk
+    - vtk 9.2.6
     - libboost-devel
-    - occt
+    - occt 7.7.2
     - zlib
     - pthreads-win32  # [win]
     # - libmed
   run:
-    - vtk
+    - vtk 9.2.6
     - {{ pin_compatible('occt', max_pin='x.x.x') }}
     - zlib
     - pthreads-win32  # [win]
